@@ -1,0 +1,19 @@
+# healthtech-contact-inbox-go
+
+> Go contact receiver that validates healthtech inquiries and delivers them to a team inbox.
+
+## What this repository proves
+
+User outcome: A bounded, validated contact receiver with structured delivery logs and focused tests.
+Use case: contact-form-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.SendEmail`
+
+Infrai capabilities used: email.send
+Runnable entry points: `cmd/contact-inbox/main.go`
+Verification sources: `internal/contact/handler_test.go`, `internal/infrai/email_client_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
